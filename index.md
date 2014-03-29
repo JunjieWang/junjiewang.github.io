@@ -1,5 +1,5 @@
 ---
-layout: homepage
+layout: index
 title: Junjie Wang
 tagline: Something about me
 ---
