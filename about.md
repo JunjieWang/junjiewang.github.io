@@ -1,6 +1,3 @@
----
-title: Herring Cove
----
   {% include header.html %}
   {{ content }}
   {% include footer.html %}
