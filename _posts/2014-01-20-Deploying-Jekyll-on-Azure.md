@@ -4,6 +4,7 @@ title:  "Deploying Jekyll on Azure with Github"
 date:   2014-01-20 14:32:16
 categories: website
 header: /images/post-images/azure-header.png
+tags: [intro, beginner, jekyll]
 
 ---
 

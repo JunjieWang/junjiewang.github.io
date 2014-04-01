@@ -1,0 +1,29 @@
+<div class="twelve columns offset-by-six content">
+	<div class="twelve columns" style="margin-top:105px;">
+        <div class="dif_view recent-posts"><a href="all.html">All</a> | View By <a href="categories.html">Category</a></div>
+		<hr class="lighter"/>
+		<div class="recent-posts">all posts <div class="spanlighter"> by tag</div></div>
+		<div class="row">
+            <ul class="tag_box inline">
+              {% assign tags_list = site.tags %}  
+              {% include JB/tags_list %}
+            </ul>
+        </div>
+        <div class ="row">
+			<ul class="all-posts">
+				{% for tag in site.tags %} 
+                <h2 id="{{ tag[0] }}-ref">{{ tag[0] }}</h2>
+                <ul>
+                    {% assign pages_list = tag[1] %}  
+                    {% include JB/pages_list %}
+                </ul>
+                {% endfor %}
+			</ul>
+		</div>
+	</div>
+</div>
+
+
+
+
+

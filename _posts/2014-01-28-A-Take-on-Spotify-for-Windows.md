@@ -3,6 +3,8 @@ layout: post
 title: A Take on Spotify for Windows
 header: /images/post-images/spotify-header.jpg
 categories: justforfun
+tags: [jekyll, tutorial]
+date: 2014-01-28 14:32:16
 
 ---
 # Where is the Windows 8 Spotify app?

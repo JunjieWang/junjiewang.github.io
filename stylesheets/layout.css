@@ -198,6 +198,7 @@ nav ul li a:hover,nav ul li a:focus {
 .about a {
             color: #28c3ab;
             /*border-bottom: 1px #fff dotted;*/
+    
  
 }
 
@@ -333,7 +334,8 @@ padding-top:100%; width: 100%;
 }
 
 .home-greeting p a{
-border-bottom: 1px #fff dotted;
+    color: #28c3ab;
+    /*border-bottom: 1px #fff dotted;*/
 }
 .hi {
     font-family: "Helvetica Neue", "Segoe UI", sans-serif;
@@ -381,8 +383,18 @@ border-bottom: 1px #fff dotted;
   text-transform: uppercase;
   font-size: smaller;
   float: right; opacity: .7;
+}
 
+.dif_view{
+  font-weight: 200;
+  text-transform: uppercase;
+  font-size: smaller;
+  float: right; opacity: .7;
+  margin-bottom: 5px !important;
+}
 
+.dif_view a{
+color: #28c3ab;
 }
 
 .spanlighter {
@@ -435,7 +447,9 @@ ul li {
 }
 
 .ula a {
-                border-bottom: 1px #fff dotted;
+        color: #28c3ab;
+        /*border-bottom: 1px #fff dotted;*/
+    
 
 }
 
@@ -848,3 +862,41 @@ table td[class*=col-],table th[class*=col-] {
     }
 
 }
+
+
+/*tag box*/
+/* tag_box */
+.tag_box {
+  list-style: none;
+  margin: 0;
+  overflow: hidden; }
+
+.tag_box li {
+  line-height: 28px; }
+
+.tag_box li i {
+  opacity: 0.9; }
+
+.tag_box.inline li {
+  float: left; }
+
+.tag_box a {
+  padding: 3px 6px;
+  margin: 2px;
+  background: #000000;
+  color: #555;
+  border-radius: 3px;
+  text-decoration: none;
+  /*border: 1px dashed #cccccc;*/ }
+
+.tag_box a span {
+  vertical-align: super;
+  font-size: 0.8em; }
+
+.tag_box a:hover {
+  color: #ffffff; }
+
+.tag_box a.active {
+  background: #57A957;
+  border: 1px solid #4c964d;
+  color: #FFF; }
