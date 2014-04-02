@@ -1,9 +1,21 @@
 <div class="ten columns offset-by-six home-greeting">
 			<h1 class="remove-bottom hi" style="margin-top: 150px">Hello World,</h1>
-			<p style="color: #28c3ab;">I'm Junjie(or Aaron), a graduate student from University of Washington.</p>
-			<p>I am <b>Junjie Wang</b>, a graduate student studying Information Management at <b>University of Washington</b>. I like modern technology. I'm interested in software development and data analysis. And I am a huge fan of sports(and e-sports!), Manchester United is my favourite soccer team and DK is my favourite dota2 team. 
+			<p style="color: #28c3ab;">I'm Junjie, a graduate student from University of Washington.</p>
+			<p>My major is Information Management. Data Science and Software Development are the two areas that I'm really interested in. I like modern technology as well. And I'll keep blogging in those three areas(LOL, let's see how it works!). And I am a huge fan of sports(and e-sports!), Manchester United is my favourite soccer team and DK is my favourite dota2 team. 
 			<hr class="clear" />
 			<img class="log_image" src="/images/log.jpg"></p>
+
+
+<hr class="lighter"/>
+			<div class="recent-posts">latest post</div>
+
+<div class="row">
+			<ul class="all-posts">
+				{% for post in site.posts limit:3%}
+				<li style="list-style: none"><a href="{{ post.url }}"><span><h5><div id="numbers">&nbsp;{{ forloop.index }}&nbsp;</div>{{ post.title }}<span class="post-list all-date">{{ post.date | date_to_string | date: "%b %-d, %Y"  }}</span></span></a></li>
+				{% endfor %}
+			</ul>
+		</div>
 </div>
 <!--
 <div class="holder"></div>
