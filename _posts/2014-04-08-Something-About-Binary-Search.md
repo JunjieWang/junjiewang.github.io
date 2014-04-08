@@ -1,5 +1,12 @@
-Binary Search
-=========
+---
+layout: post
+title:  "Something About Binary Search"
+date:   2014-04-08 14:32:16
+categories: algorithm
+tags: [java, algorithm, binary search]
+
+---
+#Binary Search
 
 Binary Seach is a very useful algorithm. Today, I will summarize it, as a reminder for me. This blog will includes the following:
 
@@ -14,18 +21,34 @@ Binary Seach is a very useful algorithm. Today, I will summarize it, as a remind
   - Search on mutiple server
   - Summary
 
-When we study an algorithm, not only we need to understand the basic idea and implementation of it, but also we should try to analysis the complexity of it, including time and space complexity.
+When we study an algorithm, not only we need to understand the basic idea and implementation of it, but also we should try to analysis the complexity of it, including time and space complexity,especially time complexity.
 
 
+##What is Binary Search?
 
-Version
-----
+Binary Search is a search algorithm. There are two prerequisite:
+  - array
+  - sorted
 
-2.0
+We can not use binary search on LinkedList. And we should also notice that whether the array is ascending or descending does not matter.
 
-Tech
------------
-
+###Java Implemention
+1.implement using recursion:
+```
+    public int binarySearch(int[] array, int left, int right, int target){
+        //int left=0;
+        //int right=array.lenth;
+        
+        if(right<left) return -1;
+        int mid=left+(right-left)/2;
+        if (array[mid]> target)
+            return    binarySearch(array, left, mid -1, target);
+        if (array[mid]< target)
+            return    binarySearch(array, mid+1, right, target);
+    //if (midValue == target)
+        return mid;
+    }
+```
 Dillinger uses a number of open source projects to work properly:
 
 * [Ace Editor] - awesome web-based text editor
@@ -65,16 +88,5 @@ MIT
 
 **Free Software, Hell Yeah!**
 
-[john gruber]:http://daringfireball.net/
-[@thomasfuchs]:http://twitter.com/thomasfuchs
-[1]:http://daringfireball.net/projects/markdown/
-[marked]:https://github.com/chjj/marked
-[Ace Editor]:http://ace.ajax.org
-[node.js]:http://nodejs.org
-[Twitter Bootstrap]:http://twitter.github.com/bootstrap/
-[keymaster.js]:https://github.com/madrobby/keymaster
-[jQuery]:http://jquery.com
-[@tjholowaychuk]:http://twitter.com/tjholowaychuk
-[express]:http://expressjs.com
 
     
