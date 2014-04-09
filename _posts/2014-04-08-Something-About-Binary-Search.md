@@ -192,6 +192,7 @@ int SearchInRotatedSortedArray(int[] array, int target) {
     return -1;
 }
 </pre>
+<br/>
 ###Kth in one rotated array
 To a normal sorted array, it can be done in O(1). To a rotated sorted array, we can use binary search to find the minimum value in O(log n). Then we can find find the kth element.  
 Find the minimum(the array is considered as ascending orginally):
@@ -267,7 +268,7 @@ Binary Search: O(log n)
         return (int)low;
    }
  </pre>
- Please noticed that there is better algothrim to calculate sqrt.
+ Please noticed that there is better algorithm to calculate sqrt.
  
 ##Search the median of two sorted array
 There are some solutions online that can only be applied when two array have the same length.  
