@@ -163,7 +163,7 @@ The time complexity is O(log n) + O(log n), therefore is O(log n).
 As stated before, binary search can not be used in unsorted array. However there is a special situation where an array is 'rotated sorted.', for example{7, 11, 13, 17, 2, 3, 5}.
 
 <pre class="prettyprint linenums">
-int SearchInRotatedSortedArray(int[] array, int target) {
+public int SearchInRotatedSortedArray(int[] array, int target) {
     int left=0;
     int right=array.length-1;
     while(left <= right){
