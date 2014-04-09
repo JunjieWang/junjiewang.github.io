@@ -251,7 +251,7 @@ public int findKthElement(int[] A, int m, int B[], int n, int k) {
 Calculate sqrt without using Math.sqrt(), and just return an integer.  
 Brute force: go through 0 to n, find n^2 ≤ x < (n+1)^2, O(n)   
 Binary Search: O(log n)
-<pre class="pretty print linenums">
+<pre class="prettyprint linenums">
  public int sqrt(int x) {
         if(x<=0) return 0;
         if (x==1) return 1;
@@ -267,7 +267,6 @@ Binary Search: O(log n)
         return (int)low;
    }
  </pre>
- 
  Please noticed that there is better algothrim to calculate sqrt.
  
 ##Search the median of two sorted array
