@@ -276,6 +276,9 @@ A more general way is to using <b>findKthElement</b>. We can easily have the med
 
 ##Search on mutiple server
 Problem: there are multiple severs that holds arrays, there is no communication between servers, and you have a laptop that can request data from those servers, how to find the Kth smallest integer?  
+
 This is a complexity form of search on two sorted array. One of a normal way is to have a data structure that store K element, compare with each server, fill with the smallest element between the data structure and server.  
-One of a problem is we don't know if the array on every server is sorted or not. But we can have the array sorted simultaneously. Which will have O(nlog n).  
-And maintain a sorted array which size is K on the laptop, and compare it with every server, using  <b>findKthElement</b>, keep the new k elements into the array, it should have a complexity of O(nlog k), n is the number of server.
+
+One of a problem is we don't know if the array on every server is sorted or not. But we can have the array sorted simultaneously. Which will have O(nlog n) complexity.  
+
+And maintain a sorted array which size is K on the laptop, and compare it with every server, using  <b>findKthElement</b>, keep the new k elements into the array, it should have a complexity of O(xlog k), x is the number of server. Therefore, in total, it will have O(nlog n) complexity.
