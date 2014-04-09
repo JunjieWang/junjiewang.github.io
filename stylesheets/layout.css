@@ -440,17 +440,15 @@ color: rgba(255,255,255,1);}
 }
 ul li {
     padding-left: .5em; 
-    margin-bottom: 1.3em;    
+    margin-bottom: 1.3em;
     font-size: 1.2em;
-    line-height: 130%;
+    line-height: 100%;
     font-family: "HelveticaNeue-Light", "Segoe UI", "Helvetica", serif;
 }
 
-.ula a {
+.ul a {
         color: #28c3ab;
         /*border-bottom: 1px #fff dotted;*/
-    
-
 }
 
 /*==================================*/
@@ -486,7 +484,7 @@ ul li {
 
 /*Code/////////////////////////////*/
 
-
+/*
 code {
     padding-left: 3px;
     padding-right: 3px;
@@ -511,7 +509,7 @@ border-right-width: 1px;
 border-top-style: solid;
 border-top-width: 1px;
 border-color: rgba(90,221,201,.8);
-color: rgba(255,255,255,.8);
+/*color: rgba(255,255,255,.8);
 display: block;
 height: auto;
 line-height: 22px;
@@ -528,6 +526,8 @@ white-space: pre;
 width: auto;
 background-color:rgba(22,33,55,.7);
 }
+
+*/
 /*===========All Posts List */
 #numbers { 
     font-family: "Helvetica Neue";
