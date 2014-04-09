@@ -232,7 +232,7 @@ By binary search, we can have a O(log(m+n)) algorithm.
 Some pre-condition: m+n>0, k>=1&&k<=m+n, and there is no duplicates among the two arrays.
 <pre class="prettyprint linenums">
 //return the value of kth element in union of two sorted array
-public int findKthElement(int[] A, int m, int B[], int n, int k) {    
+public int findKthElement(int[] A, int m, int[] B, int n, int k) {    
 	int i = int(double(m)/(m+n)*(k -1));    
 	int j = (k-1) - i;        
 	//A[i] or B[j] is the Kth element, return it    
