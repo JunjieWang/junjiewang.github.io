@@ -40,7 +40,7 @@
 <script>
     function googleAnalytics(){
         console.log("linke is clicked");
-        var gaq = window[_gaq];
+        var gaq = window['_gaq'];
         gaq.push(['_trackEvent', 'Linked', 'clicked', true]);
         gaq.push(['_trackTiming', 'Linked', 'timeSpent', 1000]);
     }
