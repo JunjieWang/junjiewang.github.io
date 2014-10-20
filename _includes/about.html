@@ -38,11 +38,17 @@
 			</div>
 			</div>
 <script>
-    function googleAnalytics(){
-        console.log("linke is clicked");
+    function oldGoogleAnalytics(){
+        console.log("link is clicked");
         var gaq = window['_gaq'];
         gaq.push(['_trackEvent', 'Linked', 'clicked', true]);
         gaq.push(['_trackTiming', 'Linked', 'timeSpent', 1000]);
+    }
+    function googleAnalytics(){
+        console.log("new link is clicked");
+        var ga = window['ga'];
+        ga('send', 'event', 'link', 'clicked', true, 0);
+        ga('send','timing', 'link', 'duration', 100);
     }
 
 
