@@ -40,9 +40,9 @@
 <script>
     function oldGoogleAnalytics(){
         console.log("link is clicked");
-        var gaq = window['_gaq'];
-        gaq.push(['_trackEvent', 'Linked', 'clicked', true]);
-        gaq.push(['_trackTiming', 'Linked', 'timeSpent', 1000]);
+        
+        _gaq.push(['_trackEvent', 'Linked', 'clicked', true]);
+        _gaq.push(['_trackTiming', 'Linked', 'timeSpent', 1000]);
     }
     function googleAnalytics(){
         console.log("new link is clicked");
