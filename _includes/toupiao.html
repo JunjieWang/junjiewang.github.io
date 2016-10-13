@@ -1,0 +1,43 @@
+
+<body>
+<button onclick="myFunction()">Vote</button>
+
+
+
+</body>
+
+
+<script>
+    function myFunction() {
+    var count = 100;
+            while(count > 0) {
+              var theUrl = "ttp://photo2016.sc157.com//zt/xxyztoupiao/do.ashx?_action=toupiao&hdid=3689&randstr=PhyIZP9&tk=E79A5A58F18C96BF1CAED142AF6255A9&t=0.1231132" + Math.random();
+              count = count - 1;
+              aClient = new HttpClient();
+              aClient.get(theUrl, function(response) {
+                Console.log("Voted: " + (1000 - count));
+              });
+    }
+  }
+
+    var HttpClient = function() {
+    this.get = function(aUrl, aCallback) {
+        var anHttpRequest = new XMLHttpRequest();
+        anHttpRequest.onreadystatechange = function() {
+            if (anHttpRequest.readyState == 4 && anHttpRequest.status == 200)
+                aCallback(anHttpRequest.responseText);
+        }
+        await sleep(10 * Math.random());
+
+        anHttpRequest.open( "GET", aUrl, true );
+        anHttpRequest.send("");
+      }
+    }
+
+    function sleep(ms) {
+  return new Promise(resolve => setTimeout(resolve, ms));
+}
+
+
+
+</script>
