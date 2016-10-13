@@ -1,8 +1,12 @@
+<head>
 
+    <!-- Basic Page Needs
+    ================================================== -->
+    <meta charset="utf-8">
+    <title>{{ site.name }}</title>
+</head>
 <body>
 <button onclick="myFunction()">Vote</button>
-
-
 
 </body>
 
@@ -11,7 +15,8 @@
     function myFunction() {
     var count = 6;
             while(count > 0) {
-              var theUrl = "http://photo2016.sc157.com//zt/xxyztoupiao/do.ashx?_action=toupiao&hdid=3689&randstr=PhyIZP9&tk=E79A5A58F18C96BF1CAED142AF6255A9&t=0.1231132" + Math.random();
+              var theUrl = "http://photo2016.sc157.com//zt/xxyztoupiao/do.ashx?_action=toupiao&hdid=3689&randstr=" + makeid() +
+              "&tk=E79A5A58F18C96BF1CAED142AF6255A9&t=" + Math.random() + "_=" + Date.now();
               count = count - 1;
               aClient = new HttpClient();
               aClient.get(theUrl, function(response) {
@@ -28,20 +33,24 @@
             if (anHttpRequest.readyState == 4 && anHttpRequest.status == 200)
                 aCallback(anHttpRequest.responseText);
         }
-        if ("withCredentials" in anHttpRequest) {
-          anHttpRequest.open( "GET", aUrl, true );
-          anHttpRequest.send("");
-        }
-        else if (typeof XDomainRequest != "undefined") {
+        anHttpRequest.withCredentials = false;
 
-        // Otherwise, check if XDomainRequest.
-        // XDomainRequest only exists in IE, and is IE's way of making CORS requests.
-        anHttpRequest = new XDomainRequest();
         anHttpRequest.open( "GET", aUrl, true );
         anHttpRequest.send("");
-      }
+
     }
   }
+
+  function makeid()
+{
+    var text = "";
+    var possible = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+
+    for( var i=0; i < 7; i++ )
+        text += possible.charAt(Math.floor(Math.random() * possible.length));
+
+    return text;
+}
 
 
 
