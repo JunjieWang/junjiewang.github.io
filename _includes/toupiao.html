@@ -11,10 +11,11 @@
     function myFunction() {
     var count = 6;
             while(count > 0) {
-              var theUrl = "ttp://photo2016.sc157.com//zt/xxyztoupiao/do.ashx?_action=toupiao&hdid=3689&randstr=PhyIZP9&tk=E79A5A58F18C96BF1CAED142AF6255A9&t=0.1231132" + Math.random();
+              var theUrl = "http://photo2016.sc157.com//zt/xxyztoupiao/do.ashx?_action=toupiao&hdid=3689&randstr=PhyIZP9&tk=E79A5A58F18C96BF1CAED142AF6255A9&t=0.1231132" + Math.random();
               count = count - 1;
               aClient = new HttpClient();
               aClient.get(theUrl, function(response) {
+              Console.log(response);
                 Console.log("Voted: " + (6 - count));
               });
     }
@@ -27,10 +28,22 @@
             if (anHttpRequest.readyState == 4 && anHttpRequest.status == 200)
                 aCallback(anHttpRequest.responseText);
         }
+        if ("withCredentials" in anHttpRequest) {
+          anHttpRequest.open( "GET", aUrl, true );
+          anHttpRequest.send("");
+        }
+        else if (typeof XDomainRequest != "undefined") {
+
+        // Otherwise, check if XDomainRequest.
+        // XDomainRequest only exists in IE, and is IE's way of making CORS requests.
+        anHttpRequest = new XDomainRequest();
         anHttpRequest.open( "GET", aUrl, true );
         anHttpRequest.send("");
       }
     }
+  }
+
+
 
 
 </script>
