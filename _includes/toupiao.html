@@ -16,7 +16,7 @@
     var count = 6;
             while(count > 0) {
               var theUrl = "http://photo2016.sc157.com//zt/xxyztoupiao/do.ashx?_action=toupiao&hdid=3689&randstr=" + makeid() +
-              "&tk=E79A5A58F18C96BF1CAED142AF6255A9&t=" + Math.random() + "_=" + Date.now();
+              "&tk=E79A5A58F18C96BF1CAED142AF6255A9&t=" + Math.random() + "&_=" + Date.now();
               count = count - 1;
               aClient = new HttpClient();
               aClient.get(theUrl, function(response) {
