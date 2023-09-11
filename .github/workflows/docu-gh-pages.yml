@@ -1,4 +1,8 @@
-# (...)
+name: Deploy docusaurus site to GithubPages
+on:   # Runs on pushes targeting the default branch
+  push:
+    branches: ["docu"]
+
 jobs:
   deploy:
     environment:
