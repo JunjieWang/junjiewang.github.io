@@ -2,7 +2,9 @@ name: Deploy docusaurus site to GithubPages
 on:   # Runs on pushes targeting the default branch
   push:
     branches: ["docu", "master"]
-
+defaults:
+ run:
+  working-directory: ./website
 jobs:
   deploy:
     environment:
@@ -29,7 +31,7 @@ jobs:
         uses: actions/upload-pages-artifact@v2
         with:
           # 👇 Specify build output path
-          path: website/build
+          path: /build
           destination: ./_site
       - name: Deploy to GitHub Pages
         id: deployment
