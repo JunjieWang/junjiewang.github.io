@@ -6,6 +6,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 const organizationName = "junjiewang";
 const projectName = "junjiewang.github.io";
 
+require('dotenv').config();
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'My Site',
@@ -17,7 +18,7 @@ const config = {
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: `/`,
-
+  deploymentBranch: "gh-pages",
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
   organizationName: `${organizationName}`, // Usually your GitHub org/user name.
@@ -137,5 +138,4 @@ const config = {
       },
     }),
 };
-require('dotenv').config();
 module.exports = config;
