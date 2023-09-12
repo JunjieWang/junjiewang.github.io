@@ -4,7 +4,7 @@ on:   # Runs on pushes targeting the default branch
     branches: ["docu", "master"]
 defaults:
  run:
-  working-directory: /website
+  working-directory: ./website/
 jobs:
   deploy:
     environment:
