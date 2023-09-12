@@ -3,8 +3,8 @@ on:   # Runs on pushes targeting the default branch
   push:
     branches: ["docu", "master"]
 defaults:
- run:
-  working-directory: ./website/
+  run:
+    working-directory: ./website/
 jobs:
   deploy:
     environment:
