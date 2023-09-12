@@ -9,8 +9,8 @@ const projectName = "junjiewang.github.io";
 require('dotenv').config();
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'My Site',
-  tagline: 'Dinosaurs are cool',
+  title: 'J W',
+  tagline: 'Coding is not bad',
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
