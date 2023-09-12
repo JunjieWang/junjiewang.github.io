@@ -1,0 +1,12 @@
+/website/_site/*
+/website/_theme_packages/*
+
+.env
+
+Thumbs.db
+.DS_Store
+
+!.gitkeep
+
+.rbenv-version
+.rvmrc
