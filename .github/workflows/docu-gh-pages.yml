@@ -4,7 +4,9 @@ on:   # Runs on pushes targeting the default branch
     branches: ["docu", "master"]
     # Review gh actions docs if you want to further define triggers, paths, etc
     # https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#on
-
+defaults:
+  run:
+    working-directory: ./website/
 jobs:
   deploy:
     name: Deploy to GitHub Pages
@@ -15,6 +17,7 @@ jobs:
         with:
           node-version: 18
           cache: yarn
+          cache-dependency-path: './website/yarn.lock'
 
       - name: Install dependencies
         run: yarn install --frozen-lockfile
