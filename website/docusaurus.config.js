@@ -9,7 +9,7 @@ const projectName = "junjiewang.github.io";
 require('dotenv').config();
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'J W',
+  title: 'Junjie Wang',
   tagline: 'Coding is not bad',
   favicon: 'img/favicon.ico',
 
@@ -81,7 +81,7 @@ const config = {
           },
           {to: '/blog', label: 'Blog', position: 'left'},
           {
-            href: 'https://github.com/facebook/docusaurus',
+            href: 'https://github.com/JunjieWang/junjiewang.github.io',
             label: 'GitHub',
             position: 'right',
           },
@@ -125,12 +125,12 @@ const config = {
               },
               {
                 label: 'GitHub',
-                href: 'https://github.com/facebook/docusaurus',
+                href: 'https://github.com/JunjieWang/junjiewang.github.io',
               },
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} Junjie Wang. Built with Docusaurus.`,
       },
       prism: {
         theme: lightCodeTheme,
