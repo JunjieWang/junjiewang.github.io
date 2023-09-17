@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://junjiewang.github.io/blog</id>
-    <title>J W Blog</title>
+    <title>Junjie Wang Blog</title>
     <updated>2021-08-26T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://junjiewang.github.io/blog"/>
-    <subtitle>J W Blog</subtitle>
+    <subtitle>Junjie Wang Blog</subtitle>
     <icon>https://junjiewang.github.io/img/favicon.ico</icon>
     <entry>
         <title type="html"><![CDATA[Welcome]]></title>
