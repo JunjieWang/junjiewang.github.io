@@ -11,7 +11,7 @@ require('dotenv').config();
 const config = {
   title: 'Junjie Wang',
   tagline: 'Coding is not bad',
-  favicon: 'img/favicon.ico',
+  favicon: './img/favicon.ico',
 
   // Set the production url of your site here
   url: `https://${organizationName}.github.io`,
@@ -70,7 +70,7 @@ const config = {
         title: 'My Site',
         logo: {
           alt: 'My Site Logo',
-          src: 'img/logo.svg',
+          src: 'img/logo2.svg',
         },
         items: [
           {
